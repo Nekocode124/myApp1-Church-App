@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button expand="block">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Books</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-img
+      src="https://top-bibleverses.com/wp-content/uploads/2022/06/2-Corinthians-5-7-Bible-Verse-GIF-1.gif"
+    ></ion-img>
+    <ion-card-header>
+      <ion-card-title>Daily Bread</ion-card-title>
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item *ngFor="let p of items">
+        <ion-avatar slot="start">
+          <img src="{{p.img}}" />
+        </ion-avatar>
+        <ion-label>
+          <ion-text> {{p.text}} </ion-text>
+          <ion-badge slot="end">{{p.badgeValue}}</ion-badge>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,41 @@
+ion-title {
+  font-weight: 600;
+}
+
+ion-card {
+  width: 100%;
+  height: 300px;
+  box-shadow: none;
+  border-radius: 12px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1, 1.1) rotate(1deg);
+  transition: 600ms all ease-out;
+}
+
+.swiper-slide-active {
+  transform: scale(1.05, 1.05);
+
+  ion-card {
+    img {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.swiper-slide- {
+  transition: 400ms all ease-in-out;
+}
+
+.color {
+  color: #ffde59;
+  font-size: 30px;
+}
+ion-toolbar {
+  --background: #ffde59;
+  color: #fff;
+}
